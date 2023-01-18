@@ -18,11 +18,9 @@ export default function Home({ posts }): JSX.Element {
 }
 
 export async function getStaticProps(context) {
-  const id = context.query ? context.query.id : "all";
-
   const query = `
     query {
-      Posts(tag: "${id}") {
+      Posts(tag: "all") {
         metadata {
           title
           date
