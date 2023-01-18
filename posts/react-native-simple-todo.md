@@ -3,7 +3,6 @@ title: "React Native: Simple Todo"
 date: "October 15, 2021"
 image: "https://www.archibuzz.com/sites/default/files/2020-11/react-facebook%20%281%29.png"
 tag: "React"
-tagColor: "#8154ef"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

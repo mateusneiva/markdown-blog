@@ -3,7 +3,6 @@ title: "Starting in Flutter"
 date: "January 1, 2022"
 image: "https://miro.medium.com/max/2000/1*PCKC8Ufml-wvb9Vjj3aaWw.jpeg"
 tag: "Flutter"
-tagColor: "#66BA3C"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

@@ -1,7 +1,9 @@
-import { GraphQLClient } from "../api/graphql";
-import Home from "../index";
+import React from "react";
 
-function TagList({ posts }): JSX.Element {
+import Home from "pages/index";
+import { GraphQLClient } from "api/graphql";
+
+export default function TagList({ posts }): JSX.Element {
   return <Home posts={posts} />;
 }
 
@@ -32,5 +34,3 @@ export async function getServerSideProps(context) {
     },
   };
 }
-
-export default TagList;

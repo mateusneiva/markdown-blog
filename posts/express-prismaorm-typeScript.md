@@ -3,7 +3,6 @@ title: "Express + PrismaORM + TypeScript"
 date: "January 3, 2022"
 image: "http://softwareengineeringdaily.com/wp-content/uploads/2018/09/prisma.png"
 tag: "Node"
-tagColor: "#ff8601"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

@@ -1,9 +1,11 @@
+import React from "react";
 import Head from "next/head";
 import Error from "next/error";
-import { GraphQLClient } from "../api/graphql";
-import PostContent from "components/PostContent";
 
-function Post({ post }): JSX.Element {
+import { GraphQLClient } from "api/graphql";
+import { PostContent } from "components/PostContent";
+
+export default function Post({ post }): JSX.Element {
   if (!post) {
     return <Error statusCode={404} />;
   }
@@ -29,13 +31,13 @@ export async function getServerSideProps(context) {
     query {
       Post (slug: "${id}") {
         metadata {
-          image
           title
           date
+          image
           tag
           tagColor
-          timetoread
           slug
+          timetoread
         },
         content
       }
@@ -50,5 +52,3 @@ export async function getServerSideProps(context) {
     },
   };
 }
-
-export default Post;

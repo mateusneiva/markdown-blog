@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import NextLink from "next/link";
 
-export const NavbarContainer = styled.div`
+export const Container = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,7 @@ export const NavbarContainer = styled.div`
   }
 `;
 
-export const TagsWrapper = styled.div`
+export const Navigation = styled.nav`
   display: flex;
   justify-content: center;
   margin-top: 55px;
@@ -22,7 +23,7 @@ export const TagsWrapper = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const IconLink = styled(NextLink)`
   display: flex;
   justify-content: center;
   position: relative;
@@ -31,6 +32,7 @@ export const Link = styled.a`
     img {
       opacity: 0.65;
     }
+
     p {
       visibility: visible;
       opacity: 1;
@@ -38,7 +40,7 @@ export const Link = styled.a`
   }
 `;
 
-export const Image = styled.img`
+export const Icon = styled.img`
   width: 45px;
   height: 45px;
   margin-inline: 18px;
@@ -46,18 +48,23 @@ export const Image = styled.img`
   border-radius: 3px;
 `;
 
-export const Description = styled.p`
+export const HoverText = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;
+
   position: absolute;
   top: -40px;
+  padding: 0px 8px;
+  
   font-size: 10px;
   text-transform: uppercase;
-  padding: 0px 8px;
   border-radius: 20px;
-  background: ${(props) => props.color};
+  
   color: #ffffff;
-  opacity: 0;
+  background: ${(props) => props.color};
+  
   transition: 0.2s;
+  visibility: hidden;
+  opacity: 0;
 `;

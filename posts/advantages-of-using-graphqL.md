@@ -3,7 +3,6 @@ title: "Advantages of Using GraphQL"
 date: "October 23, 2021"
 image: "https://images.ctfassets.net/23aumh6u8s0i/7dRRpqkgQsuoZfqK47sAFj/15ea762a924d8164cee9ee22d6fc83f8/graphql"
 tag: "GraphQL"
-tagColor: "#9fd2d6"
 ---
 
 ## Lorem Ipsum

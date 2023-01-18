@@ -1,24 +1,28 @@
+import React from "react";
 import Head from "next/head";
-import { GraphQLClient } from "./api/graphql";
-import Navbar from "components/Navbar";
-import PostsList from "components/PostsList";
 
-function Home({ posts }): JSX.Element {
+import { GraphQLClient } from "api/graphql";
+import { Header } from "components/Header";
+import { PostsList } from "components/PostsList";
+
+export default function Home({ posts }): JSX.Element {
   return (
     <>
       <Head>
         <title>Blog</title>
       </Head>
-      <Navbar />
+      <Header />
       <PostsList posts={posts} />
     </>
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  const id = context.query ? context.query.id : "all";
+
   const query = `
     query {
-      Posts(tag: "all") {
+      Posts(tag: "${id}") {
         metadata {
           title
           date
@@ -40,5 +44,3 @@ export async function getStaticProps() {
     },
   };
 }
-
-export default Home;

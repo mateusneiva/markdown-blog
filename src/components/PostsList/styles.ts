@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ListContainer = styled.div`
+export const Container = styled.div`
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 389px);

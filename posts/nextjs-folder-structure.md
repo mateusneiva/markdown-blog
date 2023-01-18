@@ -3,7 +3,6 @@ title: "Next: Folder Structure"
 date: "October 3, 2021"
 image: "https://miro.medium.com/max/1000/0*hXm4rb8UAf5DEhZ2.png"
 tag: "Next"
-tagColor: "#ff4e4e"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

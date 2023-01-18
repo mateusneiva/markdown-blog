@@ -16,7 +16,12 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "components/*": ["src/components/*"]
+      "pages/*": ["src/pages/*"],
+      "components/*": ["src/components/*"],
+      "assets/*": ["src/assets/*"],
+      "styles/*": ["src/styles/*"],
+      "api/*": ["src/pages/api/*"],
+      "graphql/*": ["src/graphql/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

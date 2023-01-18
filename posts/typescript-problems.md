@@ -3,7 +3,6 @@ title: "TypeScript Problems"
 date: "October 6, 2021"
 image: "https://images.ctfassets.net/23aumh6u8s0i/1GpPK36EMwOOZZcQPV4YRD/8acc95b8c3639be1be1d445e5e762dae/typescript"
 tag: "TypeScript"
-tagColor: "#ff8601"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.

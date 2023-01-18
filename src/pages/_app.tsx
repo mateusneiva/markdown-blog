@@ -1,7 +1,7 @@
-import GlobalStyle from "../styles/global";
 import type { AppProps } from "next/app";
+import { GlobalStyle } from "styles/global";
 
-function App({ Component, pageProps }: AppProps): JSX.Element {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <GlobalStyle />
@@ -9,5 +9,3 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
     </>
   );
 }
-
-export default App;

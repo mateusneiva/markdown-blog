@@ -1,5 +1,5 @@
 import { ApolloServer, gql } from "apollo-server-micro";
-import getAllPosts from "../../graphql/resolvers/getAllPosts";
+import getAllPosts from "graphql/resolvers/getAllPosts";
 
 export const config = {
   api: {
@@ -34,10 +34,12 @@ const resolvers = {
   Query: {
     Posts: (parent, args, context, info) => {
       const { tag } = args;
-      if(tag == 'all'){
+      if (tag == "all") {
         return getAllPosts();
       }
-      return getAllPosts().filter((post) => post.metadata.tag.toLowerCase() === tag.toLowerCase());
+      return getAllPosts().filter(
+        (post) => post.metadata.tag.toLowerCase() === tag.toLowerCase()
+      );
     },
     Post: (parent, args, context, info) => {
       const { slug } = args;

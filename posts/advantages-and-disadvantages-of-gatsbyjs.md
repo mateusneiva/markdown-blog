@@ -3,7 +3,6 @@ title: "Advantages and Disadvantages of GatsbyJS"
 date: "October 3, 2021"
 image: "https://images.ctfassets.net/23aumh6u8s0i/1vxNyK4RaOzRrc5ELJ8rqo/ec2a9b9dab9fb851db2794d80fe0f92d/gatsbyjs"
 tag: "Gatsby"
-tagColor: "#66BA3C"
 ---
 
 

@@ -3,7 +3,6 @@ title: "Mobile Application Ideas"
 date: "September 8, 2021"
 image: "https://dkrn4sk0rn31v.cloudfront.net/uploads/2020/03/27113042/react-native.png"
 tag: "React"
-tagColor: "#8154ef"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

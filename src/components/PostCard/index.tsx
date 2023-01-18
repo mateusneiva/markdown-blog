@@ -1,6 +1,7 @@
-import NextLink from "next/link";
+import React from "react";
+
 import {
-  CardContainer,
+  Container,
   Image,
   ImageHoverZoom,
   Title,
@@ -9,17 +10,15 @@ import {
 } from "./styles";
 import { BsFillCalendarDateFill, BsBookFill } from "react-icons/bs";
 
-function PostCard({ post }): JSX.Element {
+export function PostCard({ post }): JSX.Element {
   return (
-    <CardContainer>
-      <NextLink href={`/blog/${post.metadata.slug}`} passHref>
-        <ImageHoverZoom>
-          <Image src={post.metadata.image} />
-        </ImageHoverZoom>
-      </NextLink>
-      <NextLink href={`/blog/${post.metadata.slug}`} passHref>
-        <Title>{post.metadata.title}</Title>
-      </NextLink>
+    <Container>
+      <ImageHoverZoom href={`/post/${post.metadata.slug}`}>
+        <Image src={post.metadata.image} />
+      </ImageHoverZoom>
+
+      <Title href={`/post/${post.metadata.slug}`}>{post.metadata.title}</Title>
+
       <Metadata>
         <div>
           <time>
@@ -31,12 +30,11 @@ function PostCard({ post }): JSX.Element {
             {post.metadata.timetoread}
           </p>
         </div>
-        <NextLink key="" href={`/tags/${post.metadata.tag}`} passHref>
-          <Tag color={post.metadata.tagColor}>{post.metadata.tag}</Tag>
-        </NextLink>
+
+        <Tag href={`/post/${post.metadata.tag}`} color={post.metadata.tagColor}>
+          {post.metadata.tag}
+        </Tag>
       </Metadata>
-    </CardContainer>
+    </Container>
   );
 }
-
-export default PostCard;

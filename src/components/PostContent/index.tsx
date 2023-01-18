@@ -1,6 +1,9 @@
+import React from "react";
 import NextLink from "next/link";
+import { BsFillCalendarDateFill, BsBookFill } from "react-icons/bs";
+
 import {
-  PostContainer,
+  Container,
   Metadata,
   Content,
   Title,
@@ -8,13 +11,13 @@ import {
   Tag,
   Image,
 } from "./styles";
-import { BsFillCalendarDateFill, BsBookFill } from "react-icons/bs";
-import Navbar from "components/Navbar";
 
-function PostContent({ post }): JSX.Element {
+import { Header } from "components/Header";
+
+export function PostContent({ post }): JSX.Element {
   return (
-    <PostContainer>
-      <Navbar />
+    <Container>
+      <Header />
       <Metadata>
         <Image src={post.metadata.image} />
         <Info>
@@ -41,8 +44,6 @@ function PostContent({ post }): JSX.Element {
           __html: post.content,
         }}
       />
-    </PostContainer>
+    </Container>
   );
 }
-
-export default PostContent;

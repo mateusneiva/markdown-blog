@@ -1,14 +1,14 @@
-import { ListContainer } from "./styles";
-import PostCard from "components/PostCard";
+import React from "react";
 
-function PostsList({ posts }): JSX.Element {
+import { Container } from "./styles";
+import { PostCard } from "components/PostCard";
+
+export function PostsList({ posts }): JSX.Element {
   return (
-    <ListContainer>
+    <Container>
       {posts.map((post) => {
         return <PostCard key={post.metadata.slug} post={post} />;
       })}
-    </ListContainer>
+    </Container>
   );
 }
-
-export default PostsList;

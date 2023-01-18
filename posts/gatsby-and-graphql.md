@@ -3,7 +3,6 @@ title: "Gatsby and GraphQL"
 date: "November 18, 2021"
 image: "https://www.whitespectre.com/uploads/gatsby.jpg"
 tag: "Gatsby"
-tagColor: "#66BA3C"
 ---
 
 
