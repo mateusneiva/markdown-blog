@@ -75,7 +75,7 @@ export function Header() {
       <Navigation>
         {NavigationLinks.map((Link, index) => {
           return (
-            <IconLink href={`/filter/${Link.href}`}>
+            <IconLink href={`/filter${Link.href}`} key={index}>
               <Icon src={`/icons/${Link.iconPath}`} />
               <HoverText color={`${Link.hoverColor}`}>{Link.title}</HoverText>
             </IconLink>
