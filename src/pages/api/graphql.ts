@@ -12,9 +12,6 @@ const typeDefs = gql`
     title: String
     slug: String
     date: String
-    image: String
-    tag: String
-    tagColor: String
     timetoread: String
     description: String
   }
@@ -32,14 +29,8 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    Posts: (parent, args, context, info) => {
-      const { tag } = args;
-      if (tag == "all") {
-        return getAllPosts();
-      }
-      return getAllPosts().filter(
-        (post) => post.metadata.tag.toLowerCase() === tag.toLowerCase()
-      );
+    Posts: () => {
+      return getAllPosts();
     },
     Post: (parent, args, context, info) => {
       const { slug } = args;

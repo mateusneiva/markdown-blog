@@ -1,8 +1,7 @@
 ---
 title: "Next.js 12 is Powerful"
 date: "November 3, 2021"
-image: "https://images.ctfassets.net/23aumh6u8s0i/c04wENP3FnbevwdWzrePs/1e2739fa6d0aa5192cf89599e009da4e/nextjs"
-tag: "Next"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, leo vel fringilla venenatis, nunc enim convallis leo, nec placerat."
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

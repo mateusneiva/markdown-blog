@@ -8,12 +8,9 @@ interface IPost {
   metadata: {
     title?: string;
     date?: string;
-    image?: string;
-    timetoread?: string;
     description?: string;
     slug?: string;
-    tag?: string;
-    tagColor?: string;
+    timetoread?: string;
   };
   content: string;
 }
@@ -29,7 +26,7 @@ function getAllPosts() {
       .use(remarkHTML)
       .processSync(content)
       .toString();
-      
+
     return {
       metadata: {
         ...metadata,

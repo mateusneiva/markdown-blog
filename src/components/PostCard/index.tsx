@@ -1,40 +1,15 @@
-import React from "react";
+import { Container, Title, Time, Description } from "./styles";
 
-import {
-  Container,
-  Image,
-  ImageHoverZoom,
-  Title,
-  Metadata,
-  Tag,
-} from "./styles";
-import { BsFillCalendarDateFill, BsBookFill } from "react-icons/bs";
-
-export function PostCard({ post }): JSX.Element {
+export function PostCard({ post }) {
   return (
     <Container>
-      <ImageHoverZoom href={`/post/${post.metadata.slug}`}>
-        <Image src={post.metadata.image} />
-      </ImageHoverZoom>
-
       <Title href={`/post/${post.metadata.slug}`}>{post.metadata.title}</Title>
 
-      <Metadata>
-        <div>
-          <time>
-            <BsFillCalendarDateFill />
-            {post.metadata.date}
-          </time>
-          <p>
-            <BsBookFill />
-            {post.metadata.timetoread}
-          </p>
-        </div>
+      <Description>{post.metadata.description}</Description>
 
-        <Tag href={`/post/${post.metadata.tag}`} color={post.metadata.tagColor}>
-          {post.metadata.tag}
-        </Tag>
-      </Metadata>
+      <Time>
+        <p>{post.metadata.date}</p>•<p>{post.metadata.timetoread}</p>
+      </Time>
     </Container>
   );
 }

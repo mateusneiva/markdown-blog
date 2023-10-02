@@ -1,10 +1,8 @@
 ---
 title: "Gatsby and GraphQL"
 date: "November 18, 2021"
-image: "https://www.whitespectre.com/uploads/gatsby.jpg"
-tag: "Gatsby"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, leo vel fringilla venenatis, nunc enim convallis leo, nec placerat."
 ---
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula. Nulla facilisi. Nunc vitae risus sagittis, sagittis turpis vitae, rhoncus est. Aliquam faucibus diam ut ipsum tincidunt, laoreet fermentum odio molestie. Cras semper leo commodo turpis malesuada elementum. 
 

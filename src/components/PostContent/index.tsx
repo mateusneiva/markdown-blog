@@ -1,48 +1,27 @@
-import React from "react";
-import NextLink from "next/link";
-import { BsFillCalendarDateFill, BsBookFill } from "react-icons/bs";
-
+import { Header } from "components/Header";
 import {
   Container,
   Metadata,
   Content,
   Title,
-  Info,
-  Tag,
-  Image,
+  Description,
+  Time,
 } from "./styles";
 
-import { Header } from "components/Header";
-
-export function PostContent({ post }): JSX.Element {
+export function PostContent({ post }) {
   return (
     <Container>
       <Header />
       <Metadata>
-        <Image src={post.metadata.image} />
-        <Info>
-          <Title>{post.metadata.title}</Title>
-          <div>
-            <div>
-              <time>
-                <BsFillCalendarDateFill />
-                {post.metadata.date}
-              </time>
-              <p>
-                <BsBookFill />
-                {post.metadata.timetoread}
-              </p>
-            </div>
+        <Title>{post.metadata.title}</Title>
 
-            <Tag
-              href={`/filter/${post.metadata.tag}`}
-              color={post.metadata.tagColor}
-            >
-              {post.metadata.tag}
-            </Tag>
-          </div>
-        </Info>
+        <Description>{post.metadata.description}</Description>
+
+        <Time>
+          <time>{post.metadata.date}</time>•<p>{post.metadata.timetoread}</p>
+        </Time>
       </Metadata>
+
       <Content
         dangerouslySetInnerHTML={{
           __html: post.content,

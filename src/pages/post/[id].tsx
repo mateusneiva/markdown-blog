@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import Error from "next/error";
 
@@ -43,9 +42,7 @@ export async function getStaticProps(context) {
         metadata {
           title
           date
-          image
-          tag
-          tagColor
+          description
           slug
           timetoread
         },

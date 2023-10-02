@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
-import { GraphQLClient } from "api/graphql";
 import { Header } from "components/Header";
 import { PostsList } from "components/PostsList";
+import { GraphQLClient } from "api/graphql";
 
 export default function Home({ posts }): JSX.Element {
   return (
@@ -20,13 +20,11 @@ export default function Home({ posts }): JSX.Element {
 export async function getStaticProps(context) {
   const query = `
     query {
-      Posts(tag: "all") {
+      Posts {
         metadata {
           title
           date
-          image
-          tag
-          tagColor
+          description
           slug
           timetoread
         }

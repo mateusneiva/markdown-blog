@@ -3,37 +3,19 @@ import NextLink from "next/link";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  width: 382px;
-  background-color: #ffffff;
-`;
+  gap: 10px;
 
-export const Image = styled.img`
-  width: 382px;
-  height: 270px;
-  object-fit: cover;
-  transition: 0.5s ease;
-
-  &:hover {
-    transform: scale(1.06);
-  }
-`;
-
-export const ImageHoverZoom = styled(NextLink)`
-  width: 382px;
-  height: 270px;
-
-  overflow: hidden;
+  width: 700px;
 `;
 
 export const Title = styled(NextLink)`
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
   font-weight: 700;
 
-  padding: 20px 20px 20px 20px;
-  width: fit-content;
+  color: initial;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -41,38 +23,17 @@ export const Title = styled(NextLink)`
   }
 `;
 
-export const Metadata = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  font-size: 13px;
-  font-weight: 500;
-  color: #636363;
-
-  margin-top: 13px;
-  margin-bottom: 13px;
-
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-
-  time,
-  p {
-    display: flex;
-    align-items: center;
-  }
-
-  svg {
-    margin-right: 7px;
-  }
+export const Description = styled.p`
+  font-size: 16px;
+  font-weight: 400;
+  color: #555565;
 `;
 
-export const Tag = styled(NextLink)`
-  font-size: 10px;
-  padding: 0px 8px;
-  border-radius: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  background: ${(props) => props.color};
+export const Time = styled.div`
+  display: flex;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #555565;
 `;

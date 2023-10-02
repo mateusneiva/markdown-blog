@@ -1,8 +1,7 @@
 ---
 title: "Syntactically Awesome Style Sheets"
 date: "September 15, 2020"
-image: "https://edrodrigues.com.br/wp-content/uploads/2020/12/2-maneiras-mais-inteligentes-de-estruturar-o-sass.png"
-tag: "Sass"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, leo vel fringilla venenatis, nunc enim convallis leo, nec placerat."
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

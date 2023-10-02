@@ -1,8 +1,7 @@
 ---
 title: "Being productive with TailwindCSS"
 date: "September 15, 2021"
-image: "https://d6f6d0kpz0gyr.cloudfront.net/uploads/images/_1200x630_crop_center-center_82_none/tailwind-thumb.jpg?mtime=1609771799"
-tag: "tailwind"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, leo vel fringilla venenatis, nunc enim convallis leo, nec placerat."
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

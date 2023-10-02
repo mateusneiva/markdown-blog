@@ -1,8 +1,7 @@
 ---
 title: "Starting in Flutter"
 date: "January 1, 2022"
-image: "https://miro.medium.com/max/2000/1*PCKC8Ufml-wvb9Vjj3aaWw.jpeg"
-tag: "Flutter"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, leo vel fringilla venenatis, nunc enim convallis leo, nec placerat."
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
 

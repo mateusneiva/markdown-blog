@@ -1,12 +1,8 @@
 ---
 title: "Express + PrismaORM + TypeScript"
 date: "January 3, 2022"
-image: "http://softwareengineeringdaily.com/wp-content/uploads/2018/09/prisma.png"
-tag: "Node"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, leo vel fringilla venenatis, nunc enim convallis leo, nec placerat."
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel turpis id lectus porttitor suscipit. Phasellus libero leo, auctor nec ante nec, pharetra dignissim ligula. Nulla facilisi. Nunc vitae risus sagittis, sagittis turpis vitae, rhoncus est. Aliquam faucibus diam ut ipsum tincidunt, laoreet fermentum odio molestie. Cras semper leo commodo turpis malesuada elementum. 
 
 ## 1 - Lorem Ipsum
 

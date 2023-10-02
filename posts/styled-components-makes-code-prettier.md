@@ -1,8 +1,7 @@
 ---
 title: "Styled-Components Makes Code Prettier"
 date: "September 20, 2021"
-image: "https://scalablecss.com/static/82dea7708f26c34965aae65cbb3f9bef/21b4d/styled-components-quickstart-guide.png"
-tag: "React"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, leo vel fringilla venenatis, nunc enim convallis leo, nec placerat."
 ---
 
 ## Lorem Ipsum
