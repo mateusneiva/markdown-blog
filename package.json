@@ -5,6 +5,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "engines": {
+    "node": "18"
+  },
   "dependencies": {
     "apollo-server-micro": "3.5.0",
     "axios": "0.24.0",
