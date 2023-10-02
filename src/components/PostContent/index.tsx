@@ -33,9 +33,13 @@ export function PostContent({ post }): JSX.Element {
                 {post.metadata.timetoread}
               </p>
             </div>
-            <NextLink key="" href={`/tags/${post.metadata.tag}`} passHref>
-              <Tag color={post.metadata.tagColor}>{post.metadata.tag}</Tag>
-            </NextLink>
+
+            <Tag
+              href={`/filter/${post.metadata.tag}`}
+              color={post.metadata.tagColor}
+            >
+              {post.metadata.tag}
+            </Tag>
           </div>
         </Info>
       </Metadata>

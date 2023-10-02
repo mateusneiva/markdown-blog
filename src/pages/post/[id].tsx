@@ -4,6 +4,7 @@ import Error from "next/error";
 
 import { GraphQLClient } from "api/graphql";
 import { PostContent } from "components/PostContent";
+import { getAllPostIds } from "graphql/resolvers/getAllPostsId";
 
 export default function Post({ post }): JSX.Element {
   if (!post) {
@@ -24,8 +25,17 @@ export default function Post({ post }): JSX.Element {
   );
 }
 
-export async function getServerSideProps(context) {
-  const { id } = context.query;
+export async function getStaticPaths() {
+  const paths = getAllPostIds();
+
+  return {
+    paths: paths,
+    fallback: true,
+  };
+}
+
+export async function getStaticProps(context) {
+  const { id } = context.params;
 
   const query = `
     query {
