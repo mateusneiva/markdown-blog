@@ -17,9 +17,9 @@
 **Cloning the Repository**
 
 ```
-$ git clone https://github.com/mateusneiva/mateusneiva-homepage
+$ git clone https://github.com/mateusneiva/markdown-blog.git
 
-$ cd mateusneiva-homepage
+$ cd markdown-blog
 ```
 
 **Installing dependencies**
